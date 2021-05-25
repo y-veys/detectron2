@@ -284,7 +284,6 @@ class SimpleTrainer(TrainerBase):
         self.optimizer.zero_grad()
         losses.backward()
 
-        print(loss_dict)
         self._write_metrics(loss_dict, data_time)
 
         """
